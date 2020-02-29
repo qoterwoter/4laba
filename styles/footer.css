@@ -1,0 +1,18 @@
+.footer__mainContent {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+aside h2 {
+    font-size: 40px;
+}
+
+aside {
+    background-color: #FAC663;
+    display: grid;
+    padding: 10% 25%;
+}
+
+.aside__info h3 {
+    padding-bottom: 3%;
+}

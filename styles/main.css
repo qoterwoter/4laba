@@ -1,0 +1,218 @@
+.main__header {
+    background-image: url(../images/main_header/cat.svg);
+    background-size: cover;
+    padding: 13% 20%;
+}
+
+.main__header h1 {
+    font-size: 50px;
+}
+
+.main__header button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: white;
+    padding: 4px 4px 4px 15px;
+    border-radius: 25px;
+}
+
+.main__header button img {
+    padding-left: 8px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section article {
+    padding-top: 5%;
+}
+
+section article h2 {
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.why-we-are {
+    display: grid;
+    grid-gap: 4% 3%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.why-we-are__why-block {
+    border-radius: 7px !;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(240, 240, 240);
+    width: 300px;
+}
+
+.why-we-are__why-block:nth-child(1) {
+    grid-column: 1/1;
+}
+
+.why-we-are__why-block img {
+    padding-bottom: 3%;
+}
+
+.numbers_main {
+    width: 100%;
+    ;
+    background: url(../images/main_articles/fish-back.svg) no-repeat;
+    background-size: 40%;
+}
+
+.numbers {
+    background-image: url(../images/main_articles/sleep_cat.svg);
+    background-size: cover;
+}
+
+.numbers__sleepcat {
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    margin-top: 20px;
+}
+
+.nunmbers__block {
+    list-style-image: url(../images/main_articles/list-image.svg);
+    padding: 20px 80px 20px 80px;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(235, 235, 235);
+    z-index: 2;
+    margin-top: 7%;
+    left: 48%;
+    width: 280px;
+}
+
+.nunmbers__block ul li {
+    padding-bottom: 10px;
+}
+
+.nunmbers__block button {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #FF7236;
+    color: white;
+    border: 0;
+    padding: 4px 4px 4px 15px;
+    border-radius: 35px;
+}
+
+.nunmbers__block button img {
+    padding-left: 10px;
+}
+
+.slideshow_prev,
+.slideshow_next {
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 153, 0);
+    box-shadow: 0 0 10px rgb(235, 235, 235);
+    display: inline-block;
+    border-radius: 100px;
+    padding: 8px 14px;
+    font-weight: 900;
+    margin-left: 5px
+}
+
+.slideshow__points {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 17%;
+    margin-top: -20px;
+}
+
+.dots-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 30em;
+}
+
+.dot {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(225, 225, 225);
+    border-radius: 10px;
+    margin: 0 4px;
+}
+
+.active {
+    background-color: #FAC663;
+}
+
+.slideshowTwo {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.mySlidesTwo {
+    background: white;
+    padding: 25px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 80% 10% 10%;
+    box-shadow: 0 0 15px rgb(235, 235, 235);
+}
+
+.mySlidesTwo:last-child::after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.mySlidesTwo h2 {
+    grid-column: 1;
+    font-size: 90px;
+    color: rgb(255, 153, 0);
+}
+
+.mySlidesTwo p {
+    grid-column: 2/5;
+}
+
+.mySlidesTwo__name {
+    grid-row: 3/3;
+    grid-column: 2/4;
+    color: rgb(165, 165, 165);
+}
+
+.mySlidesTwo time {
+    color: rgb(165, 165, 165);
+    grid-row: 3/3;
+    grid-column: 4/4;
+}
+
+.dots-block-two {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.callbacks {
+    width: 100%;
+    background: url(../images/main_articles/big-paw.svg) no-repeat;
+    background-position-x: 110%;
+    background-position-y: -50px;
+}
+
+.aside__links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}

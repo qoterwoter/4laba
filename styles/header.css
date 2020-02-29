@@ -1,0 +1,25 @@
+* {
+    font-family: 'Roboto', arial;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 98px;
+}
+
+.header__ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.header__ul li {
+    padding: 0 30px;
+}
