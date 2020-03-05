@@ -1,0 +1,146 @@
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+main {
+    padding: 20px 98px;
+}
+
+.hide {
+    transition: 1s;
+}
+
+.tree {
+    width: 130px;
+    box-shadow: 0 0 10px rgb(233, 233, 233);
+    cursor: pointer;
+    position: absolute;
+    list-style: none;
+    right: 98px;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    border-radius: 10px;
+}
+
+.tree>li>ul>li {
+    padding: 3px 0;
+    list-style: none;
+}
+
+.tree>li {
+    padding: 6px 6px 6px 6px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2%;
+}
+
+main aside {}
+
+aside>div {
+    display: flex;
+    flex-direction: column;
+}
+
+aside div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 0px;
+}
+
+aside div:first-child h4 {
+    grid-column: 1/3;
+}
+
+aside div:first-child input[type='text'] {
+    padding: 2px 5px;
+    width: 90px;
+    border: 1px solid lightgray
+}
+
+main aside div {
+    padding: 20px 0;
+}
+
+aside div h4 {
+    padding-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+label::before {
+    margin-right: 6px;
+    display: inline-block;
+    content: '';
+    background-color: white;
+    border: .8px solid lightgray;
+    height: 12px;
+    width: 12px;
+    transition: .4s;
+    border-radius: 1px;
+}
+
+input[type="checkbox"]:checked+label::before {
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.numbers__number>img {
+    position: relative;
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+    bottom: -5px;
+}
+
+.numbers__number {
+    width: 300px
+}
+
+.numbers {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5% 3%;
+}
+
+.numbers__subnumber {
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-top: 0;
+    border-radius: 0 0 7px 7px;
+}
+
+.numbers__subnumber h3 {
+    font-size: 23px;
+    padding: 3% 0;
+}
+
+.numbers__subnumber li {
+    padding: 1.5% 0;
+    list-style-type: none;
+}
+
+.numbers__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 4px 4px 4px 50px;
+    border-radius: 50px;
+    border: 0;
+    color: white;
+    background-color: #FF7236;
+}
