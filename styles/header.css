@@ -19,7 +19,6 @@ header a:hover {
 }
 
 header {
-    background-color: teal;
     display: flex;
     justify-content: space-between;
     align-items: center;
