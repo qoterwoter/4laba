@@ -66,6 +66,7 @@ section article h2 {
 .numbers {
     background-image: url(../images/main_articles/sleep_cat.svg);
     background-size: cover;
+    height: 7em;
 }
 
 .numbers__sleepcat {
@@ -132,7 +133,7 @@ section article h2 {
 .dots-block {
     display: flex;
     justify-content: center;
-    margin-top: 30em;
+    margin-top: 33em;
 }
 
 .dot {
@@ -221,6 +222,18 @@ main button a {
 
 /* Адаптив */
 
+@media (max-width: 1800px) {
+    .dots-block {
+        margin-top: 27em;
+    }
+}
+
+@media (max-width: 1500px) {
+    .dots-block {
+        margin-top: 21em;
+    }
+}
+
 @media(max-width: 1300px) {
     .why-we-are {
         grid-template-columns: repeat(2, 1fr);
@@ -264,6 +277,9 @@ main button a {
     .dots-block-two {
         margin-bottom: 20px;
     }
+    .dots-block {
+        margin-top: 26em;
+    }
     .mySlidesTwo p,
     .mySlidesTwo time,
     .mySlidesTwo .mySlidesTwo__name {
@@ -287,6 +303,9 @@ main button a {
         padding: 10px 40px;
         right: 10%;
         width: 280px;
+    }
+    .numbers {
+        height: .1%;
     }
 }
 
