@@ -14,7 +14,7 @@
 
     <header>
         <img class='header__icon' src="images/header/icon.svg" alt="">
-        <nav class='header_nav'>
+        <nav id='navigation' class='header_nav'>
             <ul class='header__ul'>
                 <li>
                     <a href="#why-we-are">Почему мы?</a>
@@ -31,7 +31,8 @@
             </ul>
         </nav>
         <div class="mobile-image">
-            <img width="30" src="images/header/Hamburger_icon.svg.png" alt="">
+            <img id='mobile-button1' width="30" src="images/header/Hamburger_icon.svg.png" alt="">
+            <img id='mobile-button2' width="25" src="images/header/point.png" alt="">
         </div>
     </header>
     <main>
@@ -332,10 +333,18 @@
         }
     </script>
     <script>
-        var menu = document.getElementsByClassName('header_nav');
-        var btn = document.getElementsByClassName('mobile-image');
-        btn.onclick = function() {
-            menu.style.display = 'block';
+        var menu = document.getElementById('navigation');
+        var btn1 = document.getElementById('mobile-button1');
+        var btn2 = document.getElementById('mobile-button2');
+        btn1.onclick = function() {
+            menu.classList.add('show_menu');
+            btn1.classList.add('hide_menu');
+            btn2.classList.add('show_menu');
+        }
+        btn2.onclick = function() {
+            menu.classList.remove('show_menu');
+            btn1.classList.remove('hide_menu');
+            btn2.classList.remove('show_menu');
         }
     </script>
 </body>

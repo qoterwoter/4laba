@@ -372,7 +372,37 @@ input[type="checkbox"]:checked+label::before {
     .mobile-image {
         display: block;
     }
-    .header_nav {
+    #navigation {
         display: none;
+    }
+    .show_menu {
+        animation: show_header_menu 1s;
+        display: block !important;
+    }
+    #mobile-button2 {
+        display: none;
+    }
+    .hide_menu {
+        animation: hide_header_menu 1s;
+        display: none !important;
+    }
+    header {
+        height: 50px;
+    }
+    @keyframes hide_header_menu {
+        from {
+            opacity: 100%;
+        }
+        to {
+            opacity: 0%;
+        }
+    }
+    @keyframes show_header_menu {
+        from {
+            opacity: 0%;
+        }
+        to {
+            opacity: 100%;
+        }
     }
 }
