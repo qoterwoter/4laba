@@ -35,7 +35,7 @@
         <div class="main__header">
             <h1>Наши номера</h1>
             <div class="filtr">
-                <button><img src="images/numbers/filtr.svg" alt="">Фильтры</button>
+                <button id='myBtn'><img src="images/numbers/filtr.svg" alt="">Фильтры</button>
             </div>
             <div id="choose">
                 <ul class='tree' id='tree'>
@@ -52,41 +52,43 @@
             </div>
         </div>
         <section>
-            <aside>
-                <div>
-                    <h4>Цена за сутки, ₽</h4>
-                    <input type="text" placeholder="от 100"><input type="text" placeholder="до 600">
+            <div class='modal' id='myModal'>
+                <div class="aside modal-content"><span class='close'>&times;</span>
+                    <div class='aside__header'>
+                        <h4>Цена за сутки, ₽</h4>
+                        <input type="text" placeholder="от 100"><input type="text" placeholder="до 600">
+                    </div>
+                    <div class='aside__area'>
+                        <h4>Площадь</h4>
+                        <input id='check1' type="checkbox">
+                        <label for='check1'>0,63 м2</label>
+                        <input id='check2' type="checkbox">
+                        <label for='check2'>0,90 м2</label>
+                        <input id='check3' type="checkbox">
+                        <label for='check3'>1,13 м2</label>
+                        <input id='check4' type="checkbox">
+                        <label for='check4'>1,56 м2</label>
+                        <input id='check5' type="checkbox">
+                        <label for='check5'>2,56 м2</label>
+                        <input id='check6' type="checkbox">
+                        <label for='check6'>2,88 м2</label>
+                    </div>
+                    <div class='num_equip'>
+                        <h4>Оснащение номера</h4>
+                        <input id='scheck1' type="checkbox">
+                        <label for='scheck1'>Пустой номер</label>
+                        <input id='scheck2' type="checkbox">
+                        <label for='scheck2'>Лежак</label>
+                        <input id='scheck3' type="checkbox">
+                        <label for='scheck3'>Когтеточка</label>
+                        <input id='scheck4' type="checkbox">
+                        <label for='scheck4'>Игровой-комплекс</label>
+                        <input id='scheck5' type="checkbox">
+                        <label for='scheck5'>Домик</label>
+                    </div>
+                    <button class='drop-filter'>Сбросить фильтр</button>
                 </div>
-                <div class='aside__area'>
-                    <h4>Площадь</h4>
-                    <input id='check1' type="checkbox">
-                    <label for='check1'>0,63 м2</label>
-                    <input id='check2' type="checkbox">
-                    <label for='check2'>0,90 м2</label>
-                    <input id='check3' type="checkbox">
-                    <label for='check3'>1,13 м2</label>
-                    <input id='check4' type="checkbox">
-                    <label for='check4'>1,56 м2</label>
-                    <input id='check5' type="checkbox">
-                    <label for='check5'>2,56 м2</label>
-                    <input id='check6' type="checkbox">
-                    <label for='check6'>2,88 м2</label>
-                </div>
-                <div class='num_equip'>
-                    <h4>Оснащение номера</h4>
-                    <input id='scheck1' type="checkbox">
-                    <label for='scheck1'>Пустой номер</label>
-                    <input id='scheck2' type="checkbox">
-                    <label for='scheck2'>Лежак</label>
-                    <input id='scheck3' type="checkbox">
-                    <label for='scheck3'>Когтеточка</label>
-                    <input id='scheck4' type="checkbox">
-                    <label for='scheck4'>Игровой-комплекс</label>
-                    <input id='scheck5' type="checkbox">
-                    <label for='scheck5'>Домик</label>
-                </div>
-                <button class='drop-filter'>Сбросить фильтр</button>
-            </aside>
+            </div>
             <article class='numbers'>
                 <div class="numbers__number">
                     <img src="images/numbers/1.jpg">
@@ -305,6 +307,22 @@
 
             }
 
+        }
+    </script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = 'block';
+        }
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none'
+            }
         }
     </script>
 </body>
