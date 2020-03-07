@@ -30,6 +30,9 @@
                 </li>
             </ul>
         </nav>
+        <div class="mobile-image">
+            <img width="30" src="images/header/Hamburger_icon.svg.png" alt="">
+        </div>
     </header>
     <main>
         <div class="main__header">
@@ -326,6 +329,13 @@
         }
         if (btn.style.display == 'block') {
             modal.style.display = 'block';
+        }
+    </script>
+    <script>
+        var menu = document.getElementsByClassName('header_nav');
+        var btn = document.getElementsByClassName('mobile-image');
+        btn.onclick = function() {
+            menu.style.display = 'block';
         }
     </script>
 </body>
