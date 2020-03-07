@@ -94,7 +94,8 @@ label::before {
 
 input[type="checkbox"]:checked+label::before {
     border-radius: 10px;
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(172, 255, 190);
+    border: 1px solid rgb(241, 241, 241);
 }
 
 .drop-filter {
@@ -369,6 +370,10 @@ input[type="checkbox"]:checked+label::before {
     .modal-content {
         width: 70%;
     }
+    .aside__header input {
+        width: 100%;
+        padding: 20px !important;
+    }
     .mobile-image {
         display: block;
     }
@@ -412,5 +417,11 @@ input[type="checkbox"]:checked+label::before {
         to {
             opacity: 100%;
         }
+    }
+}
+
+@media (max-width: 376px) {
+    .aside__header {
+        grid-gap: 10px;
     }
 }
