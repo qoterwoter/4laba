@@ -39,25 +39,25 @@ section {
     grid-gap: 2%;
 }
 
-.aside>div {
+.aside div {
     display: flex;
     flex-direction: column;
 }
 
-.aside div:first-child {
-    display: grid;
+.aside__header {
+    display: grid !important;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px 0px;
+    grid-gap: 10px 50px;
 }
 
-.aside div:first-child h4 {
+.aside__header h4 {
     grid-column: 1/3;
 }
 
 .aside__header input[type='text'] {
-    padding: 2px 5px;
+    padding: 5px 5px;
     width: 90px;
-    border: 1px solid lightgray
+    border: .4px solid lightgray
 }
 
 main .aside div {
@@ -213,6 +213,9 @@ input[type="checkbox"]:checked+label::before {
 }
 
 .close {
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
     display: none;
 }
 
@@ -273,7 +276,7 @@ input[type="checkbox"]:checked+label::before {
         margin: 15% auto;
         border-radius: 15px;
         padding: 20px;
-        width: 40%;
+        width: 30%;
     }
     .myBtn {
         color: #aaa;
