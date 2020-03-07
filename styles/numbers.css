@@ -341,7 +341,7 @@ input[type="checkbox"]:checked+label::before {
         font-size: 15px;
     }
     header nav ul {
-        display: block !important;
+        display: block;
     }
     .main__header {
         padding: 1%;
@@ -387,7 +387,15 @@ input[type="checkbox"]:checked+label::before {
         display: none !important;
     }
     header {
-        height: 50px;
+        padding: 5px 10px;
+        height: 70px;
+    }
+    header nav {
+        display: flex;
+        align-items: center;
+    }
+    footer header nav ul {
+        display: block !important;
     }
     @keyframes hide_header_menu {
         from {
