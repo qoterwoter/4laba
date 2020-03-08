@@ -233,7 +233,7 @@ input[type="checkbox"]:checked+label::before {
 
 .numbers__equip_title:after {
     content: attr(data-title);
-    transition: 2s;
+    transition: 1.3s;
     position: absolute;
     border: 2px solid rgb(255, 168, 54);
     border-radius: 10px;
@@ -428,6 +428,9 @@ input[type="checkbox"]:checked+label::before {
     }
     footer header nav ul {
         display: block !important;
+    }
+    .numbers__equip_title::after {
+        width: min-content;
     }
     @keyframes hide_header_menu {
         from {

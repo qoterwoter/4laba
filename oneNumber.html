@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/oneNumber.css">
+</head>
+
+<body>
+    <header>
+        <img class='header__icon' src="images/header/icon.svg" alt="">
+        <nav class='header_nav'>
+            <ul id='navigation' class='header__ul'>
+                <li>
+                    <a href="#why-we-are">Почему мы?</a>
+                </li>
+                <li>
+                    <a href="#numbers">Номера</a>
+                </li>
+                <li>
+                    <a href="#callbacks">Отзывы</a>
+                </li>
+                <li>
+                    <a href="#how-to-find-us">Как нас найти</a>
+                </li>
+            </ul>
+            <div class="mobile-image">
+                <img id='mobile-button1' width="30" src="images/header/Hamburger_icon.svg.png" alt="">
+                <img id='mobile-button2' width="25" src="images/header/point.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class='card'>
+            <aside class='card__images'>
+                <img width="100" height="150" src="images/oneNumber/2.jpg" alt="">
+                <img width="100" height="150" src="images/oneNumber/3.jpg" alt="">
+                <img width="100" height="150" src="images/oneNumber/1.jpg" alt="">
+            </aside>
+            <div class='card__image'><img width="600" height='460' src="images/oneNumber/main.jpg" alt=""></div>
+            <div class='card__description'>
+                <h2>Супер-Люкс</h2>
+                <ul>
+                    <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+                    <li>Площадь - 2,88 м2</li>
+                    <li>Оснащение номера
+                        <ul>
+                            <li><img src="images/numbers/numbers__numberImage/bed.svg" alt="Лежак"> Лежак</li>
+                            <li><img src="images/numbers/numbers__numberImage/home.svg" alt="Домик"> Домик</li>
+                            <li><img src="images/numbers/numbers__numberImage/ball.svg" alt="Игровой комплекс"> Игровой комплекс - 3 яруса</li>
+                            <li><img src="images/numbers/numbers__numberImage/play.svg" alt="Когтеточка"> Когтеточка</li>
+                        </ul>
+                    </li>
+                    <li>Цена за сутки: <span>600₽</span></li>
+                </ul>
+                <button>Забронировать <img src="images/oneNumber/paw.svg" alt=""></button>
+            </div>
+        </section>
+        <article id="numbers" class="numbers_main">
+            <link rel="stylesheet" href="styles/main.css">
+            <h2>Другие номера</h2>
+            <div class="slideshow">
+                <div class="mySlides fade" style="display: block;">
+                    <div class="numbers">
+                        <img class="numbers__sleepcat" width="40%" src="images/main_articles/sleepcat.jpg" alt="">
+                        <div class="nunmbers__block">
+                            <h2>Эконом плюс</h2>
+                            <ul>
+                                <li>Площадь - 0,90м2</li>
+                                <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+                                <li>Цена за сутки: 200₽</li>
+                            </ul>
+                            <button><p><a href="numbers.html">Забронировать</a></p><img src="images/main_articles/paw.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbers">
+                        <img class="numbers__sleepcat" width="40%" src="images/main_articles/cat2.jpg" alt="">
+                        <div class="nunmbers__block">
+                            <h2>Комфорт</h2>
+                            <ul>
+                                <li>Площадь - 1,13м2</li>
+                                <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+                                <li>Цена за сутки: 250₽</li>
+                            </ul>
+                            <button><p><a href="numbers.html">Забронировать</a></p><img src="images/main_articles/paw.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mySlides fade" style="display: none;">
+                    <div class="numbers">
+                        <img class="numbers__sleepcat" width="40%" src="images/main_articles/cat3.jpg" alt="">
+                        <div class="nunmbers__block">
+                            <h2>Сьют</h2>
+                            <ul>
+                                <li>Площадь - 1,56м2</li>
+                                <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+                                <li>Цена за сутки: 350₽</li>
+                            </ul>
+                            <button><p><a href="numbers.html">Забронировать</a></p><img src="images/main_articles/paw.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="dots-block" style="text-align: center;">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <script src="dist/script.js"></script>
+            <div class="slideshow__points">
+                <a onclick="plusSlides(-1)" class="slideshow_prev">❮</a>
+                <a onclick="plusSlides(1)" class="slideshow_next">❯</a>
+            </div>
+        </article>
+    </main>
+    <footer id='how-to-find-us'>
+        <div class='footer__mainContent'>
+            <aside>
+                <h2>Как нас найти</h2>
+                <div class='aside__info'>
+                    <h3>Адрес</h3>
+                    <p>Санкт-Петербург, ул Большая Конюшенная, д19</p>
+                </div>
+                <div class='aside__info'>
+                    <h3>Режим работы</h3>
+                    <p>Ежеденевно, с 9:00 до 20:00</p>
+                </div>
+                <div class='aside__info'>
+                    <h3>Телефон</h3>
+                    <p>8 (800) 333-55-99</p>
+                </div>
+                <div class='aside__info'>
+                    <h3>E-mail</h3>
+                    <p>info@cat-hotel.ru</p>
+                </div>
+                <div class='aside__info'>
+                    <h3>Социальные сети</h3>
+                    <div class='aside__links'>
+                        <img src="images/footer/facebook.svg" alt="">
+                        <img src="images/footer/instagram.svg" alt="">
+                        <img src="images/footer/vk.svg" alt="">
+                    </div>
+                </div>
+            </aside>
+            <div class="map">
+                <img width="100%" src="images/footer/map.jpg" alt="">
+            </div>
+        </div>
+        <header>
+            <img class='header__icon' src="images/header/icon.svg" alt="">
+            <nav class='header_nav'>
+                <ul id='navigation' class='header__ul'>
+                    <li>
+                        <a href="#why-we-are">Почему мы?</a>
+                    </li>
+                    <li>
+                        <a href="#numbers">Номера</a>
+                    </li>
+                    <li>
+                        <a href="#callbacks">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#how-to-find-us">Как нас найти</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="footer__end">
+            <p>© 2019 Все права защищены</p>
+            <p>Политоика конфиденциальности</p>
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementById('navigation');
+        var btn1 = document.getElementById('mobile-button1');
+        var btn2 = document.getElementById('mobile-button2');
+        btn1.onclick = function() {
+            menu.classList.add('show_menu');
+            btn1.classList.add('hide_menu');
+            btn2.classList.add('show_menu');
+        }
+        btn2.onclick = function() {
+            menu.classList.remove('show_menu');
+            btn1.classList.remove('hide_menu');
+            btn2.classList.remove('show_menu');
+        }
+    </script>
+
+</body>
+
+</html>
