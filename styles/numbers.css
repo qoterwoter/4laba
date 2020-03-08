@@ -223,6 +223,33 @@ input[type="checkbox"]:checked+label::before {
     display: none;
 }
 
+.numbers__equip {
+    display: flex;
+}
+
+.numbers__equip p {
+    padding-right: 5px;
+}
+
+.numbers__equip_title:after {
+    content: attr(data-title);
+    transition: 2s;
+    position: absolute;
+    border: 2px solid rgb(255, 168, 54);
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 9999;
+    background-color: rgb(255, 255, 255);
+    margin-left: -20px;
+    margin-top: 20px;
+    opacity: 0;
+}
+
+.numbers__equip_title:hover::after {
+    transition: .2s;
+    opacity: 1;
+}
+
 @media (max-width:1300px) {
     main aside {
         display: none;
